@@ -36,13 +36,20 @@
 
         img {
             display: block;
-            margin-bottom: 20px;
+            margin: 20px auto; /* 上下 20px 边距，左右居中 */
+            max-width: calc(100% - 40px); /* 左右各留 20px 边距 */
+            height: auto; /* 保持图片比例 */
+        }
+
+        body > :not(img) {
+            max-width: calc(100% - 40px); /* 内容最大宽度减去左右边距 */
+            margin: 0 auto; /* 内容居中 */
         }
     </style>
 </head>
 
 <body>
- <a href="https://ibb.co/3GTKMfS"><img src="https://i.ibb.co/J0cZyxr/x-fidelity-1-3x.png" alt="x-fidelity-1-3x" border="0"></a>
+    <a href="https://ibb.co/3GTKMfS"><img src="https://i.ibb.co/J0cZyxr/x-fidelity-1-3x.png" alt="x-fidelity-1-3x" border="0"></a>
     <h1>Introduction to X Fidelity</h1>
     <ul>
         <li>
